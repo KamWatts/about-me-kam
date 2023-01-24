@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Cormorant:ital@1&family=Fira+Sans:wght@200&display=swap");
+
+:root {
+  --Color1: #263342;
+  --Color2: #865C3C;
+  --Color3: #97909D;
+  --Color4: #BBA096;
+  --textfam1: Abel, Cormorant, Fira Sans;
+}
+
+body {
+  background-image: linear-gradient(180deg, rgb(164,6,6,0.65), rgb(217,131,36,0.65)), url(/img/milkyway\ landscape.jpeg);
+  background-size: cover;
+  padding: 10px;
+}
+
+.welcome-text {
+  font-family: Fira Sans, sans-serif;
+  font-weight: 500;
+  color:var(--Color3);
+}
+
+.listhead-text {
+  font-family: FIre Sans, sans-serif;
+}
+
+p, ul {
+  margin: 1em;
+  font-family: Cormorant;
+  font-size: larger;
+  font-weight: bolder;
+  color: var(--Color4);
+}
