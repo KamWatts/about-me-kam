@@ -85,6 +85,8 @@ whatOnYaMind();
 
 // Question asks if the user like Code Fellows program graduates
 // QUESTION 5
+
+function studentGraduate() {
 let graduates = prompt('Do you like software engineer graduates from Code Fellows?').toLowerCase();
 
 if (graduates === 'yes' || graduates === 'y') {
@@ -97,6 +99,8 @@ if (graduates === 'yes' || graduates === 'y') {
   console.log('Please answer with a yes or no');
   alert('Please answer with a yes or no');
 }
+}
+studentGraduate();
 
 // QUESTION 6
 /*
