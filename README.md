@@ -8,6 +8,10 @@ I am implementing an interactive questionnaire that utilizes JavaScript to itera
 
 ### Author: Kameron D. Watts
 
+### Contributors and Project Partners:
+
+* [Ryan Bagan](https://github.com/Ryanb021)
+
 ### Links and Resources
 
 - [Geeks for Geeks](https://www.geeksforgeeks.org/css-combine-background-image-with-gradient-overlay/)
