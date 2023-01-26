@@ -115,12 +115,19 @@ for (let i = 0; i <= maxAttempts; i++) {
     console.log(`You are correct ${yourName} and here is your score: ${score}` );
     alert(`You are correct ${yourName} and here is your score: ${score}`);
     break;
-  } else {
-    console.log(`Try again, you have ${maxAttempts - i} tries remaining!`);
-    alert(`Try again, you have ${maxAttempts - i} tries remaining!`);
-  }
-}
 
+  } else if(myFavMeal > 'three' || myFavMeal > 3) {
+    console.log(`Try again, that is too high! You have ${maxAttempts - i} tries remaining!`);
+    alert(`Try again, that is too high! You have ${maxAttempts - i} tries remaining!`);
+
+  } else if (myFavMeal < 'three' || myFavMeal < 3) {
+    console.log(`Try again, that is too low! You have ${maxAttempts - i} tries remaining!`);
+    alert(`Try again, that is too low! You have ${maxAttempts - i} tries remaining!`);
+
+  } else
+    console.log('Please enter a number value and resubmit');
+  alert('Please enter a number value and resubmit');
+}
 // QUESTION 7
 
 /*
@@ -134,14 +141,15 @@ Consider using a loop of some sort for this question.
 */
 
 let howManyDays = prompt('How many days does it take to drive to Seattle from Alaska?').toLowerCase();
-let correctAnswers = [1, 2, 3];
+let correctAnswers = ['1', '2', '3'];
 let mostAttempts = 5;
 
 for (let i = 0; i <= mostAttempts; i++) {
 
-  if (howManyDays === correctAnswers.indexOf()) {
+  if (howManyDays === correctAnswers[1]) {
     console.log(`Good job ${yourName} you are on fire!`);
     alert(`Good job ${yourName} you are on fire!`);
+    break;
   } else {
     console.log(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} left.`);
     alert(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} tries left.`);
