@@ -87,18 +87,19 @@ whatOnYaMind();
 // QUESTION 5
 
 function studentGraduate() {
-let graduates = prompt('Do you like software engineer graduates from Code Fellows?').toLowerCase();
 
-if (graduates === 'yes' || graduates === 'y') {
-  console.log(`You may continue on to my portfolio, ${yourName}. Enjoy!`);
-  alert(`You may continue on to my portfolio, ${yourName}. Enjoy!`);
-} else if (graduates === 'no' || graduates === 'n') {
-  console.log('We made it this far, we may as well continue. You might be surprised!');
-  alert('We made it this far, we may as well continue. You might be surprised!');
-} else {
-  console.log('Please answer with a yes or no');
-  alert('Please answer with a yes or no');
-}
+  let graduates = prompt('Do you like software engineer graduates from Code Fellows?').toLowerCase();
+
+  if (graduates === 'yes' || graduates === 'y') {
+    console.log(`You may continue on to my portfolio, ${yourName}. Enjoy!`);
+    alert(`You may continue on to my portfolio, ${yourName}. Enjoy!`);
+  } else if (graduates === 'no' || graduates === 'n') {
+    console.log('We made it this far, we may as well continue. You might be surprised!');
+    alert('We made it this far, we may as well continue. You might be surprised!');
+  } else {
+    console.log('Please answer with a yes or no');
+    alert('Please answer with a yes or no');
+  }
 }
 studentGraduate();
 
@@ -123,33 +124,35 @@ compare that variable
 
 */
 
-let maxAttempts = 3;
-let score = 0;
+function howManymeals() {
+  let maxAttempts = 3;
+  let score = 0;
 
-for (let i = 0; i <= maxAttempts; i++) {
+  for (let i = 0; i <= maxAttempts; i++) {
 
-  console.log(maxAttempts);
-  console.log(i);
+    console.log(maxAttempts);
+    console.log(i);
 
-  let myFavMeal = prompt('How many meals do I eat in one day?').toLowerCase();
+    let myFavMeal = prompt('How many meals do I eat in one day?').toLowerCase();
 
-  if (myFavMeal === 'three' || myFavMeal === '3') {
-    score++;
-    console.log(`You are correct ${yourName} and here is your score: ${score}`);
-    alert(`You are correct ${yourName} and here is your score: ${score}`);
-    break;
+    if (myFavMeal === 'three' || myFavMeal === '3') {
+      score++;
+      console.log(`You are correct ${yourName} and here is your score: ${score}`);
+      alert(`You are correct ${yourName} and here is your score: ${score}`);
+      break;
 
-  } else if (myFavMeal > 'three' || myFavMeal > 3) {
-    console.log(`Try again, that is too high! You have ${maxAttempts - i} tries remaining!`);
-    alert(`Try again, that is too high! You have ${maxAttempts - i} tries remaining!`);
+    } else if (myFavMeal > 'three' || myFavMeal > 3) {
+      console.log(`Try again, that is too high! You have ${maxAttempts - i} tries remaining!`);
+      alert(`Try again, that is too high! You have ${maxAttempts - i} tries remaining!`);
 
-  } else if (myFavMeal < 'three' || myFavMeal < 3) {
-    console.log(`Try again, that is too low! You have ${maxAttempts - i} tries remaining!`);
-    alert(`Try again, that is too low! You have ${maxAttempts - i} tries remaining!`);
+    } else if (myFavMeal < 'three' || myFavMeal < 3) {
+      console.log(`Try again, that is too low! You have ${maxAttempts - i} tries remaining!`);
+      alert(`Try again, that is too low! You have ${maxAttempts - i} tries remaining!`);
 
-  } else
-    console.log('Please enter a number value and resubmit');
-  alert('Please enter a number value and resubmit');
+    } else
+      console.log('Please enter a number value and resubmit');
+    alert('Please enter a number value and resubmit');
+  }
 }
 // QUESTION 7
 
