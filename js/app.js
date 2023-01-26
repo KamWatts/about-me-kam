@@ -48,7 +48,7 @@ myJob();
 // Question asks if the user specifically wants a JavaScript Developer
 // QUESTION 3
 
-function hireMe () {
+function hireMe() {
   let whatsYourStack = prompt('Are you looking for a JavaScript Developer?').toLowerCase();
 
   if (whatsYourStack === 'yes' || whatsYourStack === 'y') {
@@ -165,19 +165,22 @@ Display all the possible correct answers to the user.
 Consider using a loop of some sort for this question.
 
 */
+function travelDays() {
 
-let howManyDays = prompt('How many days does it take to drive to Seattle from Alaska?').toLowerCase();
-let correctAnswers = ['1', '2', '3'];
-let mostAttempts = 5;
+  let howManyDays = prompt('How many days does it take to drive to Seattle from Alaska?').toLowerCase();
+  let correctAnswers = ['1', '2', '3'];
+  let mostAttempts = 5;
 
-for (let i = 0; i <= mostAttempts; i++) {
+  for (let i = 0; i <= mostAttempts; i++) {
 
-  if (howManyDays === correctAnswers[1]) {
-    console.log(`Good job ${yourName} you are on fire!`);
-    alert(`Good job ${yourName} you are on fire!`);
-    break;
-  } else {
-    console.log(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} left.`);
-    alert(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} tries left.`);
+    if (howManyDays === correctAnswers[1]) {
+      console.log(`Good job ${yourName} you are on fire!`);
+      alert(`Good job ${yourName} you are on fire!`);
+      break;
+    } else {
+      console.log(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} left.`);
+      alert(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} tries left.`);
+    }
   }
 }
+travelDays();
