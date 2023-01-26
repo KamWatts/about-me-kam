@@ -14,9 +14,13 @@ One true and it will run
 
 // Question about the users name stored with a variable and prints a message/alert after the users input
 // QUESTION 1
-let yourName = prompt('What is your name?');
-console.log('Hello " + yourName + " welcome to my portfolio!');
-alert('Hello ' + yourName + ', welcome to my portfolio!');
+
+function helloThere() {
+  let yourName = prompt('What is your name?');
+  console.log('Hello " + yourName + " welcome to my portfolio!');
+  alert('Hello ' + yourName + ', welcome to my portfolio!');
+}
+helloThere();
 
 // Question asks the user if they are a recruiter or business owner looking for employees
 
@@ -112,11 +116,11 @@ for (let i = 0; i <= maxAttempts; i++) {
 
   if (myFavMeal === 'three' || myFavMeal === '3') {
     score++;
-    console.log(`You are correct ${yourName} and here is your score: ${score}` );
+    console.log(`You are correct ${yourName} and here is your score: ${score}`);
     alert(`You are correct ${yourName} and here is your score: ${score}`);
     break;
 
-  } else if(myFavMeal > 'three' || myFavMeal > 3) {
+  } else if (myFavMeal > 'three' || myFavMeal > 3) {
     console.log(`Try again, that is too high! You have ${maxAttempts - i} tries remaining!`);
     alert(`Try again, that is too high! You have ${maxAttempts - i} tries remaining!`);
 
