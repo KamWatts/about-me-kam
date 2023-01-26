@@ -19,8 +19,8 @@ let yourName = prompt('What is your name?');
 
 function helloThere() {
 
-  console.log('Hello " + yourName + " welcome to my portfolio!');
-  alert('Hello ' + yourName + ', welcome to my portfolio!');
+  console.log(`Hello ${yourName} welcome to my portfolio!`);
+  alert(`Hello ${yourName} welcome to my portfolio!`);
 
 }
 helloThere();
@@ -34,7 +34,7 @@ function myJob() {
 
   if (yourOccupation === 'yes' || yourOccupation === 'y') {
     console.log(`You are in the right place ${yourName}! Lets continue!`);
-    alert('You are in the right place ' + yourName + '!' + ' Lets continue!');
+    alert(`You are in the right place ${yourName}! Lets continue!`);
   } else if (yourOccupation === 'no' || yourOccupation === 'n') {
     console.log('You may not care to continue, but you are welcome to stay!');
     alert('You may not care to continue, but you are welcome to stay!');
