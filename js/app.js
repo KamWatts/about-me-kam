@@ -49,35 +49,39 @@ myJob();
 // QUESTION 3
 
 function hireMe () {
-let whatsYourStack = prompt('Are you looking for a JavaScript Developer?').toLowerCase();
+  let whatsYourStack = prompt('Are you looking for a JavaScript Developer?').toLowerCase();
 
-if (whatsYourStack === 'yes' || whatsYourStack === 'y') {
-  console.log('I am really starting to think we are a great match for each other, ' + yourName + '!');
-  alert('I am really starting to think we are a great match for each other ' + yourName + '!');
-} else if (whatsYourStack === 'no' || whatsYourStack === 'n') {
-  console.log('Wow, I think you are really missing out! Even more reason for you to keep following along.');
-  alert('Wow, I think you are really missing out! Even more reason for you to keep following along.');
-} else {
-  console.log('Please answer with a yes or no');
-  alert('Please answer with a yes or no');
-}
+  if (whatsYourStack === 'yes' || whatsYourStack === 'y') {
+    console.log('I am really starting to think we are a great match for each other, ' + yourName + '!');
+    alert('I am really starting to think we are a great match for each other ' + yourName + '!');
+  } else if (whatsYourStack === 'no' || whatsYourStack === 'n') {
+    console.log('Wow, I think you are really missing out! Even more reason for you to keep following along.');
+    alert('Wow, I think you are really missing out! Even more reason for you to keep following along.');
+  } else {
+    console.log('Please answer with a yes or no');
+    alert('Please answer with a yes or no');
+  }
 }
 hireMe();
 
 // Question asks if the user values a growth mindset
 // QUESTION 4
-let yourMindset = prompt('Do you value a growth mindset?').toLowerCase();
 
-if (yourMindset === 'yes' || yourMindset === 'y') {
-  console.log('Wow. We are definitely connected now. Ok, one more question!');
-  alert('Wow. We are definitely connected now. Ok, one more question!');
-} else if (yourMindset === 'no' || yourMindset === 'n') {
-  console.log('Hmm, are you sure about that answer?');
-  alert('Hmm, are you sure about that answer?');
-} else {
-  console.log('Please answer with a yes or no');
-  alert('Please answer with a yes or no');
+function whatOnYaMind() {
+  let yourMindset = prompt('Do you value a growth mindset?').toLowerCase();
+
+  if (yourMindset === 'yes' || yourMindset === 'y') {
+    console.log('Wow. We are definitely connected now. Ok, one more question!');
+    alert('Wow. We are definitely connected now. Ok, one more question!');
+  } else if (yourMindset === 'no' || yourMindset === 'n') {
+    console.log('Hmm, are you sure about that answer?');
+    alert('Hmm, are you sure about that answer?');
+  } else {
+    console.log('Please answer with a yes or no');
+    alert('Please answer with a yes or no');
+  }
 }
+whatOnYaMind();
 
 // Question asks if the user like Code Fellows program graduates
 // QUESTION 5
