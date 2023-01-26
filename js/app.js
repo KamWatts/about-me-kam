@@ -47,6 +47,8 @@ myJob();
 
 // Question asks if the user specifically wants a JavaScript Developer
 // QUESTION 3
+
+function hireMe () {
 let whatsYourStack = prompt('Are you looking for a JavaScript Developer?').toLowerCase();
 
 if (whatsYourStack === 'yes' || whatsYourStack === 'y') {
@@ -59,6 +61,8 @@ if (whatsYourStack === 'yes' || whatsYourStack === 'y') {
   console.log('Please answer with a yes or no');
   alert('Please answer with a yes or no');
 }
+}
+hireMe();
 
 // Question asks if the user values a growth mindset
 // QUESTION 4
