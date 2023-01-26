@@ -5,29 +5,28 @@
   --Color2: #865C3C;
   --Color3: #97909D;
   --Color4: #BBA096;
-  --textfam1: Abel, Cormorant, Fira Sans;
 }
 
 body {
-  background-image: linear-gradient(180deg, rgb(164,6,6,0.65), rgb(217,131,36,0.65)), url(/img/milkyway\ landscape.jpeg);
+  background-image: linear-gradient(180deg, rgb(164,6,6,0.65), rgb(217,131,36,0.65)), url(/about-me-kam/img/milkyway\ landscape.jpeg);
   background-size: cover;
-  padding: 10px;
+  padding: 0 auto;
 }
 
 .welcome-text {
   font-family: Fira Sans, sans-serif;
-  font-weight: 500;
-  color:var(--Color3);
+  font-size: 24pt;
+  color:var(--Color1);
 }
 
 .listhead-text {
-  font-family: FIre Sans, sans-serif;
+  font-family: Fire Sans, sans-serif;
 }
 
 p, ul {
   margin: 1em;
   font-family: Cormorant;
-  font-size: larger;
+  font-size: 15pt;
   font-weight: bolder;
-  color: var(--Color4);
+  color: var(--Color1);
 }
