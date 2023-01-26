@@ -10,9 +10,8 @@ I am implementing an interactive questionnaire that utilizes JavaScript to itera
 
 ### Links and Resources
 
-- [Geeks for Geeks]("https://www.geeksforgeeks.org/css-combine-background-image-with-gradient-overlay/")
-- [Meyer Web]("https://meyerweb.com/eric/tools/css/reset/")
-- []
+- [Geeks for Geeks](https://www.geeksforgeeks.org/css-combine-background-image-with-gradient-overlay/)
+- [Meyer Web](https://meyerweb.com/eric/tools/css/reset/)
 
 ### Lighthouse Accessibility Report Score
 
