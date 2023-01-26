@@ -15,28 +15,35 @@ One true and it will run
 // Question about the users name stored with a variable and prints a message/alert after the users input
 // QUESTION 1
 
+let yourName = prompt('What is your name?');
+
 function helloThere() {
-  let yourName = prompt('What is your name?');
+
   console.log('Hello " + yourName + " welcome to my portfolio!');
   alert('Hello ' + yourName + ', welcome to my portfolio!');
+
 }
 helloThere();
 
 // Question asks the user if they are a recruiter or business owner looking for employees
 
 // QUESTION 2
-let yourOccupation = prompt('Are you looking to hire?').toLowerCase();
 
-if (yourOccupation === 'yes' || yourOccupation === 'y') {
-  console.log('You are in the right place ' + yourName + '!' + ' Lets continue!');
-  alert('You are in the right place ' + yourName + '!' + ' Lets continue!');
-} else if (yourOccupation === 'no' || yourOccupation === 'n') {
-  console.log('You may not care to continue, but you are welcome to stay!');
-  alert('You may not care to continue, but you are welcome to stay!');
-} else {
-  console.log('Please answer with a yes or no');
-  alert('Please answer with a yes or no');
+function myJob() {
+  let yourOccupation = prompt('Are you looking to hire?').toLowerCase();
+
+  if (yourOccupation === 'yes' || yourOccupation === 'y') {
+    console.log(`You are in the right place ${yourName}! Lets continue!`);
+    alert('You are in the right place ' + yourName + '!' + ' Lets continue!');
+  } else if (yourOccupation === 'no' || yourOccupation === 'n') {
+    console.log('You may not care to continue, but you are welcome to stay!');
+    alert('You may not care to continue, but you are welcome to stay!');
+  } else {
+    console.log('Please answer with a yes or no');
+    alert('Please answer with a yes or no');
+  }
 }
+myJob();
 
 // Question asks if the user specifically wants a JavaScript Developer
 // QUESTION 3
@@ -73,8 +80,8 @@ if (yourMindset === 'yes' || yourMindset === 'y') {
 let graduates = prompt('Do you like software engineer graduates from Code Fellows?').toLowerCase();
 
 if (graduates === 'yes' || graduates === 'y') {
-  console.log('You may continue on to my portfolio, ' + yourName + '. Enjoy!');
-  alert('You may continue on to my portfolio, ' + yourName + '. Enjoy!');
+  console.log(`You may continue on to my portfolio, ${yourName}. Enjoy!`);
+  alert(`You may continue on to my portfolio, ${yourName}. Enjoy!`);
 } else if (graduates === 'no' || graduates === 'n') {
   console.log('We made it this far, we may as well continue. You might be surprised!');
   alert('We made it this far, we may as well continue. You might be surprised!');
