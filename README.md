@@ -14,8 +14,8 @@ I am implementing an interactive questionnaire that utilizes JavaScript to itera
 
 ### Links and Resources
 
-- [Geeks for Geeks](https://www.geeksforgeeks.org/css-combine-background-image-with-gradient-overlay/)
-- [Meyer Web](https://meyerweb.com/eric/tools/css/reset/)
+* [Geeks for Geeks](https://www.geeksforgeeks.org/css-combine-background-image-with-gradient-overlay/)
+* [Meyer Web](https://meyerweb.com/eric/tools/css/reset/)
 
 ### Lighthouse Accessibility Report Score
 
@@ -23,5 +23,5 @@ I am implementing an interactive questionnaire that utilizes JavaScript to itera
 
 ### Reflections and Comments
 
-- Consider including the answers to your daily journal and submission questions here
-- This is also a good place to reflect on the tools and resources used and learned
+* Consider including the answers to your daily journal and submission questions here
+* This is also a good place to reflect on the tools and resources used and learned
