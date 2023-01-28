@@ -51,7 +51,7 @@ function myJob() {
 // Question asks if the user specifically wants a JavaScript Developer
 // QUESTION 3
 
-function hireMe () {
+function hireMe() {
   let whatsYourStack = prompt('Are you looking for a JavaScript Developer?').toLowerCase();
 
   if (whatsYourStack === 'yes' || whatsYourStack === 'y') {
@@ -174,30 +174,19 @@ Display all the possible correct answers to the user.
 Consider using a loop of some sort for this question.
 
 */
-function thisManyDays() {
-  let correctAnswer = [1, 2, 3];
-  let mostAttempts = 6;
-  let isCorrect = false;
 
-  while (mostAttempts > 0 && isCorrect === false) {
+let howManyDays = prompt('How many days does it take to drive to Seattle from Alaska?').toLowerCase();
+let correctAnswers = ['1', '2', '3'];
+let mostAttempts = 5;
 
-    if (mostAttempts === 0) {
-      alert('Out of attempts');
-      break;
-    }
-    let howManyDays = parseInt(prompt('How many days does it take to drive to Seattle from Alaska?'));
-    
-    for (let i = 0; i < correctAnswer.length; i++ ) {
-      
-      if (howManyDays === correctAnswer[i]) {
-        alert('You are correct!');
-        isCorrect = true;
-        break;
-      } 
-    }
-    mostAttempts--;
+for (let i = 0; i <= mostAttempts; i++) {
+
+  if (howManyDays === correctAnswers[1]) {
+    console.log(`Good job ${yourName} you are on fire!`);
+    alert(`Good job ${yourName} you are on fire!`);
+    break;
+  } else {
+    console.log(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} left.`);
+    alert(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} tries left.`);
   }
-  alert(`The correct answer is: ${correctAnswer.toString()}`);
-  }
-thisManyDays();
-
+}
