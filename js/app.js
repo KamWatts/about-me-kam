@@ -16,6 +16,7 @@ One true and it will run
 // QUESTION 1
 
 let yourName = prompt('What is your name?');
+let score = 0;
 
 function helloThere() {
 
@@ -23,7 +24,7 @@ function helloThere() {
   alert(`Hello ${yourName} welcome to my portfolio!`);
 
 }
-helloThere();
+//helloThere();
 
 // Question asks the user if they are a recruiter or business owner looking for employees
 
@@ -35,15 +36,17 @@ function myJob() {
   if (yourOccupation === 'yes' || yourOccupation === 'y') {
     console.log(`You are in the right place ${yourName}! Lets continue!`);
     alert(`You are in the right place ${yourName}! Lets continue!`);
+
   } else if (yourOccupation === 'no' || yourOccupation === 'n') {
     console.log('You may not care to continue, but you are welcome to stay!');
     alert('You may not care to continue, but you are welcome to stay!');
+
   } else {
     console.log('Please answer with a yes or no');
     alert('Please answer with a yes or no');
   }
 }
-myJob();
+//myJob();
 
 // Question asks if the user specifically wants a JavaScript Developer
 // QUESTION 3
@@ -52,8 +55,9 @@ function hireMe () {
   let whatsYourStack = prompt('Are you looking for a JavaScript Developer?').toLowerCase();
 
   if (whatsYourStack === 'yes' || whatsYourStack === 'y') {
-    console.log('I am really starting to think we are a great match for each other, ' + yourName + '!');
-    alert('I am really starting to think we are a great match for each other ' + yourName + '!');
+    console.log(`I am really starting to think we are a great match for each other ${yourName}!`);
+    alert(`I am really starting to think we are a great match for each other ${yourName}!`);
+
   } else if (whatsYourStack === 'no' || whatsYourStack === 'n') {
     console.log('Wow, I think you are really missing out! Even more reason for you to keep following along.');
     alert('Wow, I think you are really missing out! Even more reason for you to keep following along.');
@@ -62,26 +66,28 @@ function hireMe () {
     alert('Please answer with a yes or no');
   }
 }
-hireMe();
+//hireMe();
 
 // Question asks if the user values a growth mindset
 // QUESTION 4
 
-function whatOnYaMind() {
+function yourMindset() {
   let yourMindset = prompt('Do you value a growth mindset?').toLowerCase();
 
   if (yourMindset === 'yes' || yourMindset === 'y') {
     console.log('Wow. We are definitely connected now. Ok, one more question!');
     alert('Wow. We are definitely connected now. Ok, one more question!');
+
   } else if (yourMindset === 'no' || yourMindset === 'n') {
     console.log('Hmm, are you sure about that answer?');
     alert('Hmm, are you sure about that answer?');
+
   } else {
     console.log('Please answer with a yes or no');
     alert('Please answer with a yes or no');
   }
 }
-whatOnYaMind();
+//yourMindset();
 
 // Question asks if the user like Code Fellows program graduates
 // QUESTION 5
@@ -93,15 +99,17 @@ function studentGraduate() {
   if (graduates === 'yes' || graduates === 'y') {
     console.log(`You may continue on to my portfolio, ${yourName}. Enjoy!`);
     alert(`You may continue on to my portfolio, ${yourName}. Enjoy!`);
+
   } else if (graduates === 'no' || graduates === 'n') {
     console.log('We made it this far, we may as well continue. You might be surprised!');
     alert('We made it this far, we may as well continue. You might be surprised!');
+
   } else {
     console.log('Please answer with a yes or no');
     alert('Please answer with a yes or no');
   }
 }
-studentGraduate();
+//studentGraduate();
 
 // QUESTION 6
 /*
@@ -117,16 +125,15 @@ compare that variable
 
 - too high
 - too low
-- corrrect answer
+- correct answer
 - not a num
 - not a valid number in the range
 - if out of guesses, give the answer
 
 */
 
-function howManymeals() {
+function howManyMeals() {
   let maxAttempts = 3;
-  let score = 0;
 
   for (let i = 0; i <= maxAttempts; i++) {
 
@@ -154,6 +161,8 @@ function howManymeals() {
     alert('Please enter a number value and resubmit');
   }
 }
+//howManyMeals();
+
 // QUESTION 7
 
 /*
@@ -165,19 +174,30 @@ Display all the possible correct answers to the user.
 Consider using a loop of some sort for this question.
 
 */
+function thisManyDays() {
+  let correctAnswer = [1, 2, 3];
+  let mostAttempts = 6;
+  let isCorrect = false;
 
-let howManyDays = prompt('How many days does it take to drive to Seattle from Alaska?').toLowerCase();
-let correctAnswers = ['1', '2', '3'];
-let mostAttempts = 5;
+  while (mostAttempts > 0 && isCorrect === false) {
 
-for (let i = 0; i <= mostAttempts; i++) {
-
-  if (howManyDays === correctAnswers[1]) {
-    console.log(`Good job ${yourName} you are on fire!`);
-    alert(`Good job ${yourName} you are on fire!`);
-    break;
-  } else {
-    console.log(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} left.`);
-    alert(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} tries left.`);
+    if (mostAttempts === 0) {
+      alert('Out of attempts');
+      break;
+    }
+    let howManyDays = parseInt(prompt('How many days does it take to drive to Seattle from Alaska?'));
+    
+    for (let i = 0; i < correctAnswer.length; i++ ) {
+      
+      if (howManyDays === correctAnswer[i]) {
+        alert('You are correct!');
+        isCorrect = true;
+        break;
+      } 
+    }
+    mostAttempts--;
   }
-}
+  alert(`The correct answer is: ${correctAnswer.toString()}`);
+  }
+thisManyDays();
+
