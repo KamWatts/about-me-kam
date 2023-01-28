@@ -175,18 +175,30 @@ Consider using a loop of some sort for this question.
 
 */
 
-let howManyDays = prompt('How many days does it take to drive to Seattle from Alaska?').toLowerCase();
-let correctAnswers = ['1', '2', '3'];
-let mostAttempts = 5;
+function thisManyDays() {
+  let correctAnswer = [1, 2, 3];
+  let mostAttempts = 6;
+  let isCorrect = false;
 
-for (let i = 0; i <= mostAttempts; i++) {
+  while (mostAttempts > 0 && isCorrect === false) {
 
-  if (howManyDays === correctAnswers[1]) {
-    console.log(`Good job ${yourName} you are on fire!`);
-    alert(`Good job ${yourName} you are on fire!`);
-    break;
-  } else {
-    console.log(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} left.`);
-    alert(`Oh no, ${yourName}, you have to try again with ${mostAttempts - i} tries left.`);
+    if (mostAttempts === 0) {
+      alert('Out of attempts');
+      break;
+    }
+    let howManyDays = parseInt(prompt('How many days does it take to drive to Seattle from Alaska?'));
+    
+    for (let i = 0; i < correctAnswer.length; i++ ) {
+      
+      if (howManyDays === correctAnswer[i]) {
+        alert('You are correct!');
+        isCorrect = true;
+        break;
+      } 
+    }
+    mostAttempts--;
   }
-}
+  alert(`The correct answer is: ${correctAnswer.toString()}`);
+  }
+thisManyDays();
+
