@@ -20,6 +20,7 @@ I am implementing an interactive questionnaire that utilizes JavaScript to itera
 ### Lighthouse Accessibility Report Score
 
 [Day 1 Accessibility Report](img/Screenshot%202023-01-24%20at%203.48.48%20PM.png)
+[Day 5 Accessibility Report](/img/Screenshot%202023-01-29%20at%206.39.08%20PM.png)
 
 ### Reflections and Comments
 
