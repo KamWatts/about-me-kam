@@ -1,18 +1,5 @@
 'use strict';
 
-/*
-
-&& - is the 'logical and'
-One false and it will not run
-
-|| - is the 'logical or'
-One true and it will run
-
-! - the 'logical not' operator
-
-*/
-
-// Question about the users name stored with a variable and prints a message/alert after the users input
 // QUESTION 1
 
 let yourName = prompt('What is your name?');
@@ -25,8 +12,6 @@ function helloThere() {
 
 }
 helloThere();
-
-// Question asks the user if they are a recruiter or business owner looking for employees
 
 // QUESTION 2
 
@@ -49,7 +34,6 @@ function myJob() {
 }
 myJob();
 
-// Question asks if the user specifically wants a JavaScript Developer
 // QUESTION 3
 
 function hireMe() {
@@ -70,7 +54,6 @@ function hireMe() {
 }
 hireMe();
 
-// Question asks if the user values a growth mindset
 // QUESTION 4
 
 function yourMindset() {
@@ -92,7 +75,6 @@ function yourMindset() {
 }
 yourMindset();
 
-// Question asks if the user like Code Fellows program graduates
 // QUESTION 5
 
 function studentGraduate() {
@@ -116,25 +98,6 @@ function studentGraduate() {
 studentGraduate();
 
 // QUESTION 6
-/*
-
-Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
-Indicates through an alert if the guess is “too high” or “too low”.
-It should give the user exactly four opportunities to get the correct answer.
-After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
-
-user is prompted to guess
-
-compare that variable
-
-- too high
-- too low
-- correct answer
-- not a num
-- not a valid number in the range
-- if out of guesses, give the answer
-
-*/
 
 function howManyMeals() {
   let maxAttempts = 3;
@@ -168,16 +131,6 @@ function howManyMeals() {
 howManyMeals();
 
 // QUESTION 7
-
-/*
-
-Add a 7th question that has multiple possible correct answers that are stored in an array.
-Give the user 6 attempts to guess the correct answer.
-The guesses will end once the user guesses a correct answer or they run out of attempts.
-Display all the possible correct answers to the user.
-Consider using a loop of some sort for this question.
-
-*/
 
 function thisManyDays() {
 
