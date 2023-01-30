@@ -1,4 +1,4 @@
-# LAB - 02
+# LAB - 02, 03, & 05
 
 ## About Me Project
 
