@@ -1,0 +1,25 @@
+@import url("https://use.typekit.net/wyl7rnz.css"); /* Ligurino */
+@import url("https://use.typekit.net/wyl7rnz.css"); /* Report */
+:root {
+  --background-color:#D43F38;
+  --header-color:#222222;
+  --subheading-color:#ff9a4d;
+  --text-color: #222222;
+}
+
+body {
+  background: var(--background-color);
+}
+
+h1 {
+  font-family: "ligurino", sans-serif;
+  color: var(--header-color);
+  text-align: center;
+  border-bottom: 10px solid var(--subheading-color);
+}
+
+p {
+  font-family: "report", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
