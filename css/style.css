@@ -1,32 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Cormorant:ital@1&family=Fira+Sans:wght@200&display=swap");
+@import url("https://use.typekit.net/wyl7rnz.css"); /* Ligurino */
+@import url("https://use.typekit.net/wyl7rnz.css");/* report-school */
 
 :root {
-  --Color1: #263342;
-  --Color2: #865C3C;
-  --Color3: #97909D;
-  --Color4: #BBA096;
+  --background-color:#D43F38;
+  --header-color:#222222;
+  --subheading-color:#ff9a4d;
+  --text-color: #222222;
 }
 
 body {
-  background-image: linear-gradient(180deg, rgb(164,6,6,0.65), rgb(217,131,36,0.65)), url(/about-me-kam/img/milkyway\ landscape.jpeg);
-  background-size: cover;
-  padding: 0 auto;
+  background: var(--background-color);
+  padding: 150px;
 }
 
 .welcome-text {
-  font-family: Fira Sans, sans-serif;
-  font-size: 24pt;
-  color:var(--Color1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border: 10px solid black;
 }
 
-.listhead-text {
-  font-family: Fire Sans, sans-serif;
+.intro {
+  margin: 1.5rem;
 }
 
-p, ul {
-  margin: 1em;
-  font-family: Cormorant;
-  font-size: 15pt;
-  font-weight: bolder;
-  color: var(--Color1);
+h1 {
+  color: var(--header-color);
+  font-family: "ligurino", sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+  font-style: normal;
+}
+
+h2 {
+  color: var(--subheading-color);
+  font-family: "ligurino", sans-serif;
+  font-weight: 400;
+  font-size: larger;
+  font-style: oblique;
+}
+
+ul {
+  margin-top: 1.5rem;
+}
+
+ul > li {
+  display: inline-block;
+  margin: 0.5rem 1.10rem;
+}
+
+.navbar ul li a{
+  margin-top: 2rem;
+  font-family: "report-school", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.navbar ul li a:hover {
+  color: var(--subheading-color);
+  text-decoration: underline;
+  transition: ease-in-out 0.7s;
+}
+
+li > a:hover {
+  color: var(--subheading-color);
+  font-size: x-large;
+  text-decoration: underline;
+  transition: ease-in-out 0.5s;
 }

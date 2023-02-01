@@ -1,4 +1,4 @@
-# LAB - 02
+# LAB - 02, 03, & 05
 
 ## About Me Project
 
@@ -14,14 +14,15 @@ I am implementing an interactive questionnaire that utilizes JavaScript to itera
 
 ### Links and Resources
 
-- [Geeks for Geeks](https://www.geeksforgeeks.org/css-combine-background-image-with-gradient-overlay/)
-- [Meyer Web](https://meyerweb.com/eric/tools/css/reset/)
+* [Geeks for Geeks](https://www.geeksforgeeks.org/css-combine-background-image-with-gradient-overlay/)
+* [Meyer Web](https://meyerweb.com/eric/tools/css/reset/)
 
 ### Lighthouse Accessibility Report Score
 
-[Day 1 Accessibility Report](img/Screenshot%202023-01-24%20at%203.48.48%20PM.png)
+* [Day 1 Accessibility Report](img/Screenshot%202023-01-24%20at%203.48.48%20PM.png) 
+* [Day 5 Accessibility Report](/img/Screenshot%202023-01-29%20at%206.39.08%20PM.png)
 
 ### Reflections and Comments
 
-- Consider including the answers to your daily journal and submission questions here
-- This is also a good place to reflect on the tools and resources used and learned
+* Consider including the answers to your daily journal and submission questions here
+* This is also a good place to reflect on the tools and resources used and learned
