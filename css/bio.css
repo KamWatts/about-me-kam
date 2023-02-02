@@ -18,6 +18,14 @@ h1 {
   border-bottom: 10px solid var(--subheading-color);
 }
 
+h2 {
+  color: var(--subheading-color);
+  font-family: "ligurino", sans-serif;
+  font-weight: 400;
+  font-size: larger;
+  font-style: oblique;
+}
+
 p {
   font-family: "report", sans-serif;
   font-weight: 400;
