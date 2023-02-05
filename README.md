@@ -24,5 +24,3 @@ I am implementing an interactive questionnaire that utilizes JavaScript to itera
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
